@@ -169,10 +169,6 @@ const BlogDetails = () => {
 
     return (
         <div className='main-blog' ref={app}>
-            <div className="loader">
-                <h1>BLOG</h1>
-                <h2>DETAIL</h2>
-            </div>
             <span onClick={SavedBlog} className='save-icon'>
                 <BsFillSaveFill />
                 <span>Save</span>

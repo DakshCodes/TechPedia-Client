@@ -7,6 +7,11 @@
     z-index: 0;
     color: #272626;
 }
+.collection-main{
+    height: 90vh !important;
+    /* border: 1px solid red; */
+    position: relative;
+}
 
 .collection-main .loader h1 {
     font-size: 200px;
@@ -32,6 +37,7 @@
     justify-content: start;
     gap: 30px;
     flex-wrap: wrap;
+    position: relative;
     /* overflow-y: scroll; */
     /* overflow-x: hidden; */
 }
@@ -39,7 +45,7 @@
 
 .head {
     color: #535252;
-    padding: 35px 0px;
-    font-size: 3vw;
-    border-bottom: 3px solid #535252;
+    padding: 30px 0px;
+    font-size: 2.5vw;
+    border-bottom: 1px solid #535252;
 }
