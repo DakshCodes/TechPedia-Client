@@ -1,0 +1,45 @@
+.collection-main .loader {
+    /* overflow: hidden; */
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 90%;
+    z-index: 0;
+    color: #272626;
+}
+
+.collection-main .loader h1 {
+    font-size: 200px;
+    opacity: 0.3;
+    font-family: Cosi Azure;
+    position: absolute;
+    top: 129px;
+    left: -0px;
+}
+
+.collection-main .loader h2 {
+    opacity: 0.3;
+    font-size: 200px;
+    font-family: Cosi Azure;
+    position: absolute;
+    bottom: -150px;
+    right: -30px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    gap: 30px;
+    flex-wrap: wrap;
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+}
+
+
+.head {
+    color: #535252;
+    padding: 35px 0px;
+    font-size: 3vw;
+    border-bottom: 3px solid #535252;
+}

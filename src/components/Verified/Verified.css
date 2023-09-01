@@ -1,0 +1,22 @@
+.main-verified {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.main-verified div {
+    font-size: 2vw;
+    text-align: center;
+}
+
+.main-verified div span {
+    color: #ff3131;
+    font-size: 2.5vw;
+    text-decoration: none;
+    list-style: none;
+    border-bottom: 1px solid #fff;
+}

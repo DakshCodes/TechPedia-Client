@@ -1,0 +1,490 @@
+.main-blog {
+    position: relative;
+    border: 1px solid black;
+    height: 100vh;
+    width: 100%;
+    background-color: #353B3F;
+    font-family: "Popins", sans-serif;
+}
+
+.main-blog .loader {
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+}
+
+.main-blog .loader h1 {
+    position: absolute;
+    top: -150px;
+    left: 10px;
+    color: #fff;
+    font-size: 200px;
+    opacity: 0.3;
+    font-family: Cosi Azure;
+}
+
+.main-blog .loader h2 {
+    opacity: 0.3;
+    color: #fff;
+    font-size: 200px;
+    font-family: Cosi Azure;
+    position: absolute;
+    top: 350px;
+    right: 10px;
+}
+
+/* Save */
+.main-blog .save-icon {
+    position: absolute;
+    right: 3%;
+    z-index: 1;
+    top: 5%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* color: #fff; */
+    /* font-size: 48px; */
+}
+
+.main-blog .save-icon svg {
+    font-size: 48px;
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+}
+
+.main-blog .save-icon svg:hover {
+    transition: all 350ms ease-in-out;
+    color: #ff3131;
+}
+
+.main-blog .save-icon span {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+/* The card-blog */
+.card-blog {
+    position: relative;
+    scroll-behavior: smooth;
+    width: 1280px;
+    height: 780px;
+    overflow-y: auto;
+    margin: 30px auto;
+    background-color: #FFF;
+    -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+}
+
+/* custom scrollbar */
+.card-blog::-webkit-scrollbar {
+    width: 10px;
+    background-color: #4B4B4B;
+}
+
+.card-blog::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.card-blog::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 3.4px solid transparent;
+    background-clip: content-box;
+}
+
+.card-blog::-webkit-scrollbar-thumb:hover {
+    background-color: #fff;
+    /* display: none; */
+}
+
+.comment::-webkit-scrollbar {
+    width: 10px;
+    background-color: #fff;
+}
+
+.comment::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.comment::-webkit-scrollbar-thumb {
+
+    background-color: #4B4B4B;
+    border-radius: 20px;
+    border: 3.4px solid transparent;
+    background-clip: content-box;
+}
+
+.comment::-webkit-scrollbar-thumb:hover {
+    background-color: #ff3131;
+    /* display: none; */
+}
+
+/* Image on the left side */
+.thumbnail {
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main-detail .save-icon {
+    position: absolute;
+    right: 3%;
+    z-index: 1;
+    top: 5%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* color: #fff; */
+    /* font-size: 48px; */
+}
+
+.main-detail .save-icon svg {
+    font-size: 48px;
+    transition: all 350ms ease-in-out;
+    cursor: pointer;
+}
+
+.main-detail .save-icon svg:hover {
+    transition: all 350ms ease-in-out;
+    color: #ff3131;
+}
+
+.main-detail .save-icon span {
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+img.left {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 300ms ease-in-out;
+}
+
+img.left:hover {
+    transform: scale(1.2);
+}
+
+/* scroll side of the card-blog */
+
+.right {
+    margin-left: 20px;
+    /* margin-right: 20px; */
+}
+
+h1 {
+    /* display: inline; */
+    padding-top: 15px;
+    font-size: 1.3rem;
+    color: #4B4B4B;
+}
+
+.author {
+    background-color: #9ECAFF;
+    height: 40px;
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    /* gap: 30px; */
+}
+
+.author>img {
+    /* padding-top: 5px; */
+    /* margin-right: 19px; */
+    /* float: left; */
+    height: 100%;
+    width: 30%;
+    border-radius: 50%;
+}
+
+
+h2 {
+    /* padding-top: 8px; */
+    margin-right: 6px;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.separator {
+    margin-top: 10px;
+    border: 1px solid #C3C3C3;
+}
+
+p {
+    text-align: justify;
+    padding-top: 10px;
+    font-size: 0.95rem;
+    line-height: 150%;
+    color: #4B4B4B;
+}
+
+/* DATE of release*/
+
+.right .date {
+    color: #4B4B4B;
+    font-size: 24px;
+}
+
+#button svg {
+    cursor: pointer;
+}
+
+@media (min-width:300px) and (max-width: 800px) {
+    .main-blog {
+        position: relative;
+        border: 1px solid black;
+        height: 100vh;
+        width: 100%;
+        background-color: #353B3F;
+        font-family: "Popins", sans-serif;
+    }
+
+    .main-blog .loader {
+        top: 0%;
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: 0;
+    }
+
+    .main-blog .loader h1 {
+        position: absolute;
+        top: -150px;
+        left: 10px;
+        color: #fff;
+        font-size: 200px;
+        opacity: 0.3;
+        font-family: Cosi Azure;
+    }
+
+    .main-blog .loader h2 {
+        opacity: 0.3;
+        color: #fff;
+        font-size: 200px;
+        font-family: Cosi Azure;
+        position: absolute;
+        top: 350px;
+        right: 10px;
+    }
+
+    /* Save */
+    .main-blog .save-icon {
+        position: absolute;
+        right: 3%;
+        z-index: 1;
+        top: 0%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* color: #fff; */
+        /* font-size: 48px; */
+    }
+
+    .main-blog .save-icon svg {
+        color: #fff;
+        font-size: 25px;
+        transition: all 350ms ease-in-out;
+        cursor: pointer;
+    }
+
+    .main-blog .save-icon svg:hover {
+        transition: all 350ms ease-in-out;
+        color: #ff3131;
+    }
+
+    .main-blog .save-icon span {
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+
+    /* The card-blog */
+    .card-blog {
+        position: relative;
+        scroll-behavior: smooth;
+        width: 350px;
+        height: 600px;
+        overflow-y: auto;
+        margin: 30px auto;
+        background-color: #FFF;
+        -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+    }
+
+    /* custom scrollbar */
+    .card-blog::-webkit-scrollbar {
+        width: 10px;
+        background-color: #4B4B4B;
+    }
+
+    .card-blog::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .card-blog::-webkit-scrollbar-thumb {
+        background-color: #fff;
+        border-radius: 20px;
+        border: 3.4px solid transparent;
+        background-clip: content-box;
+    }
+
+    .card-blog::-webkit-scrollbar-thumb:hover {
+        background-color: #fff;
+        /* display: none; */
+    }
+
+    .comment::-webkit-scrollbar {
+        width: 10px;
+        background-color: #fff;
+    }
+
+    .comment::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .comment::-webkit-scrollbar-thumb {
+
+        background-color: #4B4B4B;
+        border-radius: 20px;
+        border: 3.4px solid transparent;
+        background-clip: content-box;
+    }
+
+    .comment::-webkit-scrollbar-thumb:hover {
+        background-color: #ff3131;
+        /* display: none; */
+    }
+
+    /* Image on the left side */
+    .thumbnail {
+        overflow: hidden;
+        height: 240px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .main-detail .save-icon svg:hover {
+        transition: all 350ms ease-in-out;
+        color: #ff3131;
+    }
+
+    .main-detail .save-icon span {
+        color: #fff;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-top: 5px;
+    }
+
+    img.left {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 300ms ease-in-out;
+    }
+
+    img.left:hover {
+        transform: scale(1.2);
+    }
+
+    /* scroll side of the card-blog */
+
+    .right {
+        margin-left: 2px;
+        /* margin-right: 20px; */
+    }
+
+    .right h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        font-size: 9vw;
+    }
+
+    .right .para{
+        padding: 10px 10px;
+        max-height: 100%;
+        min-height: 100px;
+    }
+
+
+    h1 {
+        /* display: inline; */
+        padding-top: 20px;
+        font-size: 1.3rem;
+        color: #4B4B4B;
+    }
+
+    .author {
+        background-color: #9ECAFF;
+        height: 50px;
+        width: 190px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 20px;
+        /* gap: 30px; */
+    }
+
+    .author>img {
+        /* padding-top: 5px; */
+        /* margin-right: 19px; */
+        /* float: left; */
+        height: 100%;
+        width: 27%;
+        border-radius: 50%;
+    }
+
+
+    h2 {
+        /* padding-top: 8px; */
+        margin-right: 6px;
+        text-align: right;
+        font-size: 1rem;
+    }
+
+    .separator {
+        margin-top: 10px;
+        border: 1px solid #C3C3C3;
+    }
+
+    p {
+        text-align: justify;
+        padding-top: 2px;
+        font-size: 0.95rem;
+        line-height: 190%;
+        color: #4B4B4B;
+    }
+
+    /* DATE of release*/
+
+    .right .date {
+        color: #4B4B4B;
+        font-size: 20px;
+    }
+
+    #button svg {
+        cursor: pointer;
+    }
+
+}
